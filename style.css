@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    text-align: center;
+}
+
+header {
+    height: 70vh;
+    background: url("images/mobile/image-header.jpg") #3db3fd;
+    /* background-position: center; */
+    background-size: cover;
+    color: #fff;
+    padding: 1.75em;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .brand img {
+    height: 100%;
+}
+
+.header h1 a {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    display: none;
+}
+
+.heading {
+    font-family: "Fraunces", serif;
+}
+
+header .heading {
+    margin-top: 2em;
+    font-weight: 900;
+    font-size: 3rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.header-text .arrow-down {
+    font-size: 6rem;
+    margin-top: .7em;
+    color: #fff;
+}
+
+.image-part img{
+    width: 100%;
+}
+
+.text-part {
+    padding: 5em 2em;
+    font-size: 1em;
+}
+
+.text-part h1 {
+    font-size: 2.5em;
+}
+
+.text-part p {
+    font-size: 1.5rem;
+    margin-top: 1em;
+    color: hsl(198, 62%, 26%);
+}
+
+.text-part a {
+    text-transform: uppercase;
+    font-family: "Fraunces", serif;
+    font-size: 1.25rem;
+    font-weight: 900;
+    margin-top: 3em;
+    display: inline-block;
+    color: hsl(212, 27%, 19%);
+    position: relative;
+    z-index: 1;
+}
+
+.text-part a::after {
+    content: "";
+    border-radius: 12px;
+    width: 120%;
+    position: absolute;
+    height: 10px;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: .3;
+}
+
+.text-part:nth-child(odd) a::after{
+    background-color: hsl(51, 100%, 49%);
+}
+
+.text-part:nth-child(even) a::after{
+    background-color: hsl(7, 99%, 70%);
+}
+
+.sec-2  {
+    height: 70vh;
+    background: url("images/mobile/image-graphic-design.jpg");
+    background-size: cover;
+}
+.sec-3  {
+    height: 70vh;
+    background: url("images/mobile/image-photography.jpg");
+    background-size: cover;
+}
+
+section {
+    position: relative;
+}
+
+.sec-2 div,
+.sec-3 div {
+    font-size: .8em;
+    position: absolute;
+    bottom: 1em;
+}
+
+.sec-5 div img {
+    width: 49%;
+}
+
+
+@media (min-width: 431px) {
+    header {
+        background: url("images/desktop/image-header.jpg");
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+    }
+
+    .header-text .heading {
+        font-size: 4rem;
+    }
+}
